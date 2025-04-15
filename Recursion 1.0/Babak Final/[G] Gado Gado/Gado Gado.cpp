@@ -130,22 +130,6 @@ vector<mint> result(const Matrix &A, const Matrix &B, int n, ll k) {
     return ans;
 }
 
-vector<mint> actual(vector<int> &B, ll k) {
-    int n = sz(B);
-    vector<mint> A(n);
-    for(int i = 0; i < n; i++)
-        A[i] = B[i];
-
-    for(int j = 0; j < k; j++){
-        for(int i = 1; i < n; i++)
-            A[i] += A[i - 1];
-        for(int i = n - 2; i >= 0; i--)
-            A[i] += A[i + 1];
-    }
-
-    return A;
-}
-
 int main(){
  
     FastIO();
