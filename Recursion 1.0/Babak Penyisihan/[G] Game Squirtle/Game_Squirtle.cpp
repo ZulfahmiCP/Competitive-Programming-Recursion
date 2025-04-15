@@ -147,6 +147,8 @@ int main(){
         if(t == 1){
             cin >> x >> y >> u >> v, u--, v--;
 
+            if(x == 1 && y == 1) continue;
+
             auto px = max_pow(x);
             auto py = max_pow(y);
 
