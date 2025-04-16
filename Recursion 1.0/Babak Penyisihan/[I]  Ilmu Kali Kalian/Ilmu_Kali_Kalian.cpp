@@ -33,7 +33,6 @@ int main(){
         good(m) ? l = m : r = m;
     }
 
-    cout << l << '\n';
     priority_queue<int, vector<int>, greater<int>> arr;
 
     for(int &a : A){
