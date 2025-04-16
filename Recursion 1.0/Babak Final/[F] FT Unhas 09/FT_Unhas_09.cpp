@@ -242,8 +242,6 @@ int main(){
     }
 
     tree.build();
-    debug(tree.head);
-    debug(tree.sub);
 
     for(int i = 0, t,u,v,a,d; i < q; i++){
         cin >> t;
