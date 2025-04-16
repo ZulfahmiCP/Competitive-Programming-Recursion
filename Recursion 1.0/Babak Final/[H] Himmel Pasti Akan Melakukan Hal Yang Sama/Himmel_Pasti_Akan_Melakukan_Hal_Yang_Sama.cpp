@@ -108,7 +108,6 @@ int main(){
     }
     
     make_unique(res);
-    debug(res);
 
     ll m, ans = 0;
     vector<int> A(n);
